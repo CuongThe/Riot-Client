@@ -1,0 +1,727 @@
+:root {
+    --light-dark: #1c1c1c;
+    --dark: #141212;
+    --gray: #b8b8b8;
+    --dark-gray: #555452;
+    --font-color: #f0f0f0;
+    --user-nav-background: #211f1f;
+    --user-nav-hover: #282626;
+    --lol: linear-gradient(to right, #2a8fc4, #0dc0e0);
+    --lor: linear-gradient(to right, #c99d41, #a16c2c);
+    --var: linear-gradient(to right, #ff3644, #ff7a64);
+    --tft: linear-gradient(to right, #ff8326, #ffb426);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---Chung--- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.title {
+    padding: 50px 0;
+    font-size: 30px;
+    color: var(--font-color);
+}
+.update_button {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    color: var(--gray);
+    background-color: #2d2d2d;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+    box-shadow: 0px 1px 5px black;
+}
+@keyframes zoom-in-out {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.05, 1.05);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+
+
+
+/* ---Header--- */
+header {
+    /* height: 40px; */
+    padding: 30px 0;
+    background-color: var(--light-dark);
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.headerContainer .home, .headerContainer .user {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    color: var(--gray);
+    background-color: rgba(45, 45, 45, 0.3);
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    text-decoration: none;
+
+    box-shadow: 0px 1px 5px black;
+
+
+    position: fixed;
+    z-index: 10;
+}
+.headerContainer .home {
+    color: var(--font-color);
+    left: 10%;
+
+}
+.headerContainer .user{
+    border: none;
+    right: 10%;
+}
+.headerContainer .user::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 30px;
+    height: 70px;
+    top: 0;
+    left: -10px;
+}
+.headerContainer .user:hover {
+    cursor: pointer;
+    color: var(--font-color);
+}
+
+.headerContainer .user:hover .user_nav {
+    display: block;
+}
+
+.headerContainer .user .user_nav {
+    position: absolute;
+    display: none;
+
+    top: 0;
+    right: 60px;
+    width: 245px;
+    padding: 0 20px;
+    background-color: var(--user-nav-background);
+}
+.headerContainer .user .user_nav .user_nav-name {
+    padding: 20px 0;
+    font-size: 18px;
+    color: var(--gray);
+}
+.headerContainer .user .user_nav .user_nav-name::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    top: 61px;
+    left: 0;
+    background-color: var(--dark-gray);
+}
+.headerContainer .user .user_nav .user_nav-name span {
+    color: var(--dark-gray);
+}
+.headerContainer .user .user_nav .user_nav-list {
+    list-style: none;
+    padding: 20px 0 20px 0;
+}
+.headerContainer .user .user_nav .user_nav-list li {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: var(--gray);
+    text-align: left;
+
+    border-radius: 5px;
+}
+.headerContainer .user .user_nav .user_nav-list li a {
+    color: var(--gray);
+    text-decoration: none;
+}
+.headerContainer .user .user_nav .user_nav-list li i {
+    padding: 0 5px;
+}
+.headerContainer .user .user_nav .user_nav-list li a:hover {
+    color: var(--font-color);
+}
+.headerContainer .user .user_nav .user_nav-list li:hover {
+    background-color: var(--user-nav-hover);
+    color: var(--font-color);
+}
+
+.headerContainer .logo {
+    display: flex;
+    align-items: center;
+
+}
+.headerContainer .logo .logo_riot {
+    width: 135px;
+    height: 40px;
+}
+.headerContainer .logo .logo_vng {
+    width: 45px;
+    height: 45px;
+}
+
+
+
+/* ---myGame--- */
+
+.myGameContainer {
+    padding-bottom: 120px;
+    background-color: var(--light-dark);
+}
+
+.myGame {
+    
+}
+
+.myGameContainer_title {
+
+}
+
+.myGame_menu {
+
+}
+
+.myGame_item {
+    text-decoration: none;
+}
+
+/* .myGame_item img {
+    width: 310px;
+    height: 210px;
+} */
+
+.myGame_item-img {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 15px;
+    margin-bottom: 30px;
+
+    border: 5px solid var(--light-dark);
+}
+
+.myGame_item-name {
+    font-size: 20px;
+    color: var(--font-color);
+}
+
+.myGame_item-update {
+    display: flex;
+}
+.myGame_item-update .update_button {
+    margin-right: 15px;
+}
+.myGame_item-update .update_text {
+
+}
+.update_text .update_text-title {
+    font-size: 17px;
+    margin-bottom: 3px;
+}
+.update_text .update_text-name {
+    font-size: 14px;
+    color: var(--dark-gray);
+}
+
+.lol .myGame_item-img {
+    transition: all 0.3s ease-in-out;
+}
+.lol:hover .myGame_item-img {
+    animation: zoom-in-out 0.3s ease-out;
+    /* animation-direction: normal; */
+
+    outline: 4px solid #0dc0e0;
+    box-shadow: 0 0 50px #2a8fc4;
+}
+
+.lor .myGame_item-img {
+    transition: all 0.3s ease-in-out;
+}
+.lor:hover .myGame_item-img {
+    animation: zoom-in-out 0.3s ease-out;
+    /* animation-direction: normal; */
+
+    outline: 4px solid #c99d41;
+    box-shadow: 0 0 50px #a16c2c;
+}
+
+.tft .myGame_item-img {
+    transition: all 0.3s ease-in-out;
+}
+.tft:hover .myGame_item-img {
+    animation: zoom-in-out 0.3s ease-out;
+    /* animation-direction: normal; */
+
+    outline: 4px solid #ff8326;
+    box-shadow: 0 0 50px #ffb426;
+}
+
+.var .myGame_item-img {
+    transition: all 0.3s ease-in-out;
+}
+.var:hover .myGame_item-img {
+    animation: zoom-in-out 0.3s ease-out;
+    /* animation-direction: normal; */
+
+    outline: 4px solid #ff3644;
+    box-shadow: 0 0 50px #ff7a64;
+}
+
+.myGameContainer .more {
+    display: none;
+}
+
+
+/* ---allGame--- */
+.allGameContainer {
+    padding: 30px 0px 50px 0px;
+    background-color: var(--dark);
+}
+
+.allGame {
+    position: relative;
+}
+
+.allGame_menu {
+}
+
+.allGame_item {
+    position: relative;
+}
+
+.allGame_item-img {
+    width: 100%;
+    height: 285px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 15px;
+    margin-bottom: 30px;
+
+    border: 5px solid var(--dark);
+}
+
+.allGame_item-installed {
+    position: absolute;
+    width: calc(100% - 34px);
+    height: 45px;
+    padding-left: 20px;
+    bottom: 35px;
+    left: 17px;
+    color: var(--dark);
+    font-size: 20px;
+    line-height: 45px;
+
+    border-radius: 0 0 10px 10px;
+}
+
+.lol .allGame_item-installed {
+    background-image: var(--lol);
+}
+.lor .allGame_item-installed {
+    background-image: var(--lor);
+}
+.tft .allGame_item-installed {
+    background-image: var(--tft);
+}
+.var .allGame_item-installed {
+    background-image: var(--var);
+}
+
+.lol .allGame_item-img {
+    transition: all 0.3s ease-in-out;
+}
+
+.wr  .allGame_item-img {
+    transition: all 0.3s ease-in-out;
+}
+
+.lor .allGame_item-img {
+    transition: all 0.3s ease-in-out;
+}
+
+.tft .allGame_item-img {
+    transition: all 0.3s ease-in-out;
+}
+
+.var .allGame_item-img {
+    transition: all 0.3s ease-in-out;
+}
+.lol:hover .allGame_item-img {
+    animation: zoom-in-out 0.3s ease-out;
+    outline: 4px solid #0dc0e0;
+    box-shadow: 0 0 50px #2a8fc4;
+} 
+.lol:hover .allGame_item-installed {
+    display: none;
+}
+.wr:hover  .allGame_item-img {
+    animation: zoom-in-out 0.3s ease-out;
+    outline: 4px solid #0dc0e0;
+    box-shadow: 0 0 50px #2a8fc4;
+} 
+
+.wr:hover .allGame_item-installed {
+    display: none;
+}
+.lor:hover .allGame_item-img {
+    animation: zoom-in-out 0.3s ease-out;
+    outline: 4px solid #c99d41;
+    box-shadow: 0 0 50px #a16c2c;
+} 
+.lor:hover .allGame_item-installed {
+    display: none;
+}
+.tft:hover .allGame_item-img {
+    animation: zoom-in-out 0.3s ease-out;
+    outline: 4px solid #ff8326;
+    box-shadow: 0 0 50px #ffb426;
+} 
+.tft:hover .allGame_item-installed {
+    display: none;
+}
+.var:hover .allGame_item-img {
+    animation: zoom-in-out 0.3s ease-out;
+    outline: 4px solid #ff3644;
+    box-shadow: 0 0 50px #ff7a64;
+} 
+.var:hover .allGame_item-installed {
+    display: none;
+}
+
+.allGame .more {
+    display: none;
+}
+
+
+
+/* ---even--- */
+.evenContainer {
+    background-color: var(--dark);
+    padding-bottom: 50px;
+}
+
+.even_img {
+    border-radius: 10px;
+}
+
+.even_subTitle {
+    padding: 25px 0 15px 15px;
+}
+
+.even_content {
+    padding-left: 15px;
+    color: var(--gray);
+    font-size: 18px;
+}
+.even_content-text {
+    text-align: justify;
+    padding-right: 30px;
+}
+.even_download-ios,
+.even_download-android {
+    color: var(--gray);
+    text-decoration: none;
+}
+.even_download-ios:hover,
+.even_download-android:hover {
+    color: var(--font-color);
+    cursor: pointer;
+}
+
+.even_download-ios div,
+.even_download-android  div {
+    /* height: 100%; */
+    text-align: center;
+    line-height: 66px;
+    background-color: #201e1e;
+    border-radius: 25px;
+}
+
+.even_download-ios div i,
+.even_download-android  div i {
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+
+/* ---foooter--- */
+footer {
+    background-color: var(--dark);
+    border-top: 1px solid var(--dark-gray);
+}
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    color: var(--dark-gray);
+    padding: 30px;
+}
+.copyright {
+    font-size: 14px;
+}
+
+.link a{
+    font-size: 25px;
+    color: var(--dark-gray);
+    text-decoration: none;
+
+}
+.link a:hover{
+    color: var(--gray);
+}
+.link a:first-child {
+    margin-right: 30px;
+}
+
+
+/* ---news--- */
+.newsContainer {
+    background-color: var(--light-dark);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.news {
+    position: relative;
+}
+
+.news_title {
+
+}
+
+.newContainer {
+
+}
+
+.new {
+    text-decoration: none;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.new .img{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.new img {
+    transition: all 0.2s ease-in-out;
+}
+
+.new:hover img {
+    transform: scale(1.1);
+    opacity: 0.6;
+}
+.new:hover div {
+    opacity: 0.8;
+}
+
+.new .new_title{
+    font-size: 25px;
+    color: var(--font-color);
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-align: justify;
+
+}
+.new .new_title strong {
+    /* color: #d1363a; */
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.new .new_content{
+    font-size: 18px;
+    color: var(--gray);
+    text-align: justify;
+    margin: 0 10px;
+
+}
+
+.more {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+
+    display: flex;
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-color);
+    border: 2px solid var(--font-color);
+    border-radius: 50px;
+    transition: all 0.2s ease-in-out;
+}
+.more span {
+    margin-right: 10px;
+}
+.more:hover {
+    cursor: pointer;
+    color: #d1363a;
+    border: 2px solid #d1363a;
+}
+.more:active {
+    color: var(--font-color);
+    border: 2px solid var(--font-color);
+}
+
+
+
+
+
+/* ---addGame--- */
+.addGameContainer {
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    display: flex;
+    width: 170px;
+    height: 50px;
+    color: var(--gray);
+    background-color: rgba(45, 45, 45, 0.3);
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    text-decoration: none;
+
+    box-shadow: 0px 1px 5px black;
+
+    z-index: 10;
+    transition: all 0.2s ease-in-out;
+}
+.addGameContainer:hover{
+    cursor: pointer;
+    color: var(--font-color);
+}
+.addGameContainer:active {
+    color: var(--gray);
+}
+
+.addGame i{
+    margin-right: 20px;
+}
+
+
+/* ---bootstrap */
+
+.d-flex {
+    margin-bottom: 30px;
+}
+
+
+/* ---Responsive */
+
+/* < PC */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .headerContainer .home, .headerContainer .user {
+        position: absolute;
+    }
+
+    .allGame_item-installed {
+        width: calc(100% - 26px);
+        left: 13px;
+    }
+
+    .myGame_item {
+        margin-bottom: 30px;
+    }
+
+    .myGameContainer .more {
+        display: none;
+    }
+
+    .even_content-text {
+        margin-bottom: 30px;
+    }
+
+    .allGame .more {
+        display: none;
+    }
+
+    .addGameContainer {
+        display: none;
+    }
+}
+
+@media (max-width: 739px) {
+    .headerContainer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .user {
+        position: relative !important;
+        right: 0 !important;
+    }
+    .home {
+        display: none !important;
+    }
+
+    .myGameContainer .more {
+        display: flex;
+        bottom: -100px;
+    }
+
+    .myGame_item {
+        margin-bottom: 30px;
+    }
+
+    .allGame_item-installed {
+        width: calc(100% - 18px);
+        left: 9px;
+    }
+
+    .allGame .more {
+        display: flex;
+        bottom: -60px;
+    }
+
+    .even_content-text {
+        padding-right: 19px;
+        margin-bottom: 30px;
+    }
+    .even_download-ios, .even_download-android {
+        padding-right: 19px;
+        margin-bottom: 10px;
+    }
+
+    .addGameContainer {
+        display: none;
+    }
+}

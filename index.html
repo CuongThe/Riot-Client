@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Client</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="headerContainer grid wide">
+            <a href="#" class="home"><i class="fa-solid fa-table-cells-large"></i></a>
+            <div class="logo">
+                <a href=""><img class="logo_riot" src="./img/logo_riot.png" alt=""></a>
+                <a href=""><img class="logo_vng" src="./img/logo_vng.png" alt=""></a>
+            </div>
+            <div class="user">
+                <i class="fa-solid fa-user"></i>
+                <div class="user_nav">
+                    <div class="user_nav-name">
+                        CuongThe<span>#Cuong</span>
+                    </div>
+                    <ul class="user_nav-list">
+                        <li><a href=""><span>THÔNG TIN TÀI KHOẢN</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                        <li><a href="">BẢO MẬT TÀI KHOẢN<i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                        <li>TÙY CHỈNH</li>
+                        <li>ĐĂNG XUẤT</li>
+                        <li>THOÁT</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    <div class="myGameContainer">
+        <div class="myGame grid wide">
+            <div class="myGame_title title">
+                Trò chơi của tôi
+            </div>
+            <div class="myGame_menu row">
+                <a href="./games/lol.html" class="myGame_item lol col l-3 m-6 s-12">
+                    <div class="myGame_item-img" style="background-image: url(./img/lol.png);"></div>
+                    <!-- <img src="img/lol.png" alt=""> -->
+                    <div class="myGame_item-name">Liên Minh Huyền Thoại</div>
+                </a>
+                <a href="games/lor.html" class="myGame_item lor col l-3 m-6 s-12">
+                    <div class="myGame_item-img" style="background-image: url(./img/lor.png);"></div>
+                    <!-- <img src="img/lor.png" alt=""> -->
+                    <div class="myGame_item-update">
+                        <div class="update_button">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </div>
+                        <div class="update_text">
+                            <div class="update_text-title" style="color: #c99d41;">Cập nhật</div>
+                            <div class="update_text-name">HUYỀN THOẠI RUNETERRA</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="games/tft.html" class="myGame_item tft col l-3 m-6 s-0">
+                    <div class="myGame_item-img" style="background-image: url(./img/tft.png);"></div>
+                    <!-- <img src="img/tft.png" alt=""> -->
+                    <div class="myGame_item-name">Đấu Trường Chân lý</div>  
+                </a>
+                <a href="games/var.html" class="myGame_item var col l-3 m-6 s-0">
+                    <div class="myGame_item-img" style="background-image: url(./img/var.jpg);"></div>
+                    <!-- <img src="img/var.jpg" alt=""> -->
+                    <div class="myGame_item-update">
+                        <div class="update_button">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </div>
+                        <div class="update_text">
+                            <div class="update_text-title" style="color: #ff3644;">Cập nhật</div>
+                            <div class="update_text-name">VARLORANT</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="more">
+            <span>/</span>Tải Thêm
+        </div>
+    </div>
+
+    <div class="allGameContainer">
+        <div class="allGame grid wide">
+            <div class="allGame_title title">
+                Tất cả trò chơi
+            </div>
+
+
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+
+
+
+            <div class="allGame_menu row">
+
+                <a href="games/lol.html" class="allGame_item lol col l-4 m-6 s-12">
+                    <div class="allGame_item-img" style="background-image: url(./img/lol.png);"></div>
+                    <div class="allGame_item-installed">Đã cài đặt</div>
+                </a>
+
+                <a href="games/wr.html" class="allGame_item wr col l-4 m-6 s-12">
+                    <div class="allGame_item-img" style="background-image: url(./img/tocChien.jpg);"></div>
+                </a>
+
+                <a href="games/lor.html" class="allGame_item lor col l-4 m-6 s-0">
+                    <div class="allGame_item-img" style="background-image: url(./img/lor.png);"></div>
+                    <div class="allGame_item-installed">Đã cài đặt</div>
+                </a>
+
+                <a href="games/tft.html" class="allGame_item tft col l-4 m-6 s-0">
+                    <div class="allGame_item-img" style="background-image: url(./img/tft.png);"></div>
+                    <div class="allGame_item-installed">Đã cài đặt</div>
+                </a>
+
+                <a href="games/var.html" class="allGame_item var col l-4 m-6 s-0">
+                    <div class="allGame_item-img" style="background-image: url(./img/var.jpg);"></div>
+                    <div class="allGame_item-installed">Đã cài đặt</div>
+                </a>
+
+            </div>
+
+            <div class="more">
+                <span>/</span>Tải Thêm
+            </div>
+        </div>
+    </div>
+
+    <div class="evenContainer">
+        <div class="even grid wide">
+            <div class="enven_title title">
+                Sự kiện đặc biệt
+            </div>
+            <img src="./img/riotMobile.png" alt="" class="even_img"></img>
+            <div class="even_subTitle title">
+                Tải Riot Mobile ngay
+            </div>
+            <div class="even_content row">
+                <div class="even_content-text col l-6 m-12 s-12">
+                    Riot Mobile giúp bạn dễ dàng khám phá nhiều nội dung mới, cập nhật thông tin về các tự game và sự kiện cũng như kết nối với người chơi khác bên ngoài trò chơi.
+                </div>
+
+                <a href="" class="even_download-ios col l-3 m-6 s-12">
+                    <div>
+                        <i class="fa-brands fa-apple"></i>
+                        IOS Apple Store
+                    </div>
+                </a>
+                <a href="" class="even_download-android col l-3 m-6 s-12">
+                    <div>
+                        <i class="fa-brands fa-google-play"></i>
+                        Goole Play
+                    </div>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="newsContainer">
+        <div class="news grid wide">
+            <div class="news_title title">
+                Tin Tức
+            </div>
+            <div class="newContainer row">
+                <a href="https://www.youtube.com/watch?v=Jcp0PZlP6-A" target="_blank" class="new col l-6 m-12 s-12">
+                    <div class="img">
+                        <img src="img/news/1.jpg" alt="">
+                    </div>
+                    <div class="new_title">
+                        cập nhật từ <strong>đnpt</strong>: Tướng, cốt truyện & chủ đề khác
+                    </div>
+                    <div class="new_content">
+                        Riot Brightmoon, Meddler và các khách mời đã trở lại để cập nhật tin tức mới về tướng, cốt truyện, Đấu Nhanh và những chủ đề khác.
+                    </div>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=C3GouGa0noM" target="_blank" class="new col l-6 m-12 s-12">
+                    <div class="img">
+                        <img src="img/news/2.jpg" alt="">
+                    </div>
+                    <div class="new_title">
+                        GODS ft. NewJeans (뉴진스) | Bài Hát Chủ Đề CKTG 2023
+                    </div>
+                    <div class="new_content">
+                        Đây là câu chuyện về một tinh thần bất khuất và một trái tim rắn rỏi của một vị tướng.
+                    </div>
+                </a>
+
+                <a href="https://lolesports.com/article/worlds-2023-primer/blte9ec68c4b4f441fc" target="_blank" class="new col l-6 m-12 s-0">
+                    <div class="img">
+                        <img src="img/news/3.jpg" alt="">
+                    </div>
+                    <div class="new_title">
+                        Giới Thiệu CKTG 2023
+                    </div>
+                    <div class="new_content">
+                        Tìm hiểu thêm về Chung Kết Thế Giới Liên Minh Huyền Thoại 2023 tại Hàn Quốc.
+                    </div>
+                </a>
+                
+                <a href="https://www.leagueoflegends.com/en-us/news/dev/champion-insights-briar/" target="_blank" class="new col l-6 m-12 s-0">
+                    <div class="img">
+                        <img src="img/news/4.png" alt="">
+                    </div>
+                    <div class="new_title">
+                        Tổng quan tướng: Briar
+                    </div>
+                    <div class="new_content">
+                        Thèm thuồng máu tươi, nhưng khao khát được sống.
+                    </div>
+                </a>
+
+                <div class="more">
+                    <span>/</span>Tải Thêm
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="addGameContainer">
+        <div class="addGame">
+            <i class="fa-solid fa-file-arrow-up"></i>
+            Thêm Trò Chơi
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerContainer grid wide">
+            <div class="copyright">
+                <div>© năm 2023 bởi Riot Games, Inc. Đã đăng ký bản quyền.</div>
+                <div>Clone by CuongThe</div>
+            </div>
+            <div class="link">
+                <a href="https://www.facebook.com/ntc.1006/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/_cuongthe_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+.play_action {
+    position: relative;
+    display: flex;
+    width: 220px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: var(--font-color);
+    background-image: var(--lol);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #0dc0e0;
+}
+.contentItem:hover .contentItem_img {
+    animation: zoom-in-out 0.3s ease-out;
+    /* animation-direction: normal; */
+
+    outline: 4px solid #2a8fc4;
+    box-shadow: 0 0 50px #0dc0e0;
+}
+
+.platform {
+    display: block;
+}
+.pc {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.mobile {
+    display: flex;
+    align-items: center;
+}
+
+.platform_ios, .platform_android {
+    display: flex;
+    width: 150px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 33px;
+    background-color: #2a2a2a;
+    color: var(--gray);
+    border-radius: 15px;
+}
+.platform_ios {
+    width: 180px;
+}
+
+.platform_ios i, .platform_android i {
+    font-size: 25px;
+    color: var(--gray);
+}
+.platform_ios:hover i, .platform_android:hover i {
+    color: var(--font-color);
+}
